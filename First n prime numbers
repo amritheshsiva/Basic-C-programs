@@ -1,0 +1,33 @@
+#include<stdio.h>
+int checkPrime(int);
+void main() 
+{
+int n,i,flag,c=1;
+printf("Enter the limit of the range:");
+scanf("%d",&n);
+printf("The prime numbers are : \n");
+for(i=2;c<=n;i++) 
+{
+
+flag=checkPrime(i);
+if(flag==1)  
+{
+printf("%d ",i);
+c++;
+}
+}
+}
+int checkPrime(int num)
+{
+int j,flag=1;
+for(j=2;j<=num/2;j++)   
+{
+if(num%j==0)  
+{
+flag=0;
+break;
+}
+}
+return flag;  
+    
+}
