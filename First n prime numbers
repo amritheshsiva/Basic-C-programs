@@ -10,7 +10,7 @@ for(i=2;c<=n;i++)
 {
 
 flag=checkPrime(i);
-if(flag==1)  
+if(flag==1)
 {
 printf("%d ",i);
 c++;
