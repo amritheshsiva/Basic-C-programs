@@ -1,0 +1,29 @@
+#include<stdio.h>
+int main()
+{
+int score;
+printf("Enter score of student:");
+scanf("%d",&score);
+if(score>10)
+{
+printf("Enter a valid score");
+return 0;
+}
+switch(score/10)
+{
+case 10: printf("S");
+break;
+case 9: printf("S");
+break;
+case 8: printf("A");
+break;
+case 7: printf("B");
+break;
+case 6: printf("C");
+break;
+case 4: printf("F");
+break;
+default: printf("F");
+}
+return 0;
+}
